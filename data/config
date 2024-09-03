@@ -23,11 +23,11 @@ ForceCSS: false
 # Adding the same widget multiple times to the layout is *not* supported and will cause issues.
 
 # Widgets to show on the left side
-WidgetsLeft: [Workspaces]
+WidgetsLeft: [Workspaces, Audio]
 # Widgets to center
 WidgetsCenter: [Time]
 # Widgets to display on the right side
-WidgetsRight: [Tray, Packages, Audio, Bluetooth, Network, Disk, VRAM, GPU, RAM, CPU, Battery, Power]
+WidgetsRight: [Tray, Packages, Bluetooth, Network, Disk, VRAM, GPU, RAM, CPU, Battery, Power]
 
 # The CPU sensor to use
 CPUThermalZone: /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input
@@ -139,16 +139,16 @@ DateTimeStyle: %a %D - %H:%M:%S %Z
 MaxTitleLength: 30
 
 # Adds a audio input(aka. microphone) widget
-AudioInput: false
+AudioInput: true
 
 # Sets the audio slider to be on reveal (Just like the sensors) when true. Only affects the bar.
-AudioRevealer: false
+AudioRevealer: true
 
 # Sets the rate of change of the slider on each scroll. In Percent
-AudioScrollSpeed: 5
+AudioScrollSpeed: 2
 
 # Display numbers instead of a slider for the two audio widgets. Doesn't affect the audio flyin
-AudioNumbers: false
+AudioNumbers: true
 
 # Command that is run to check if there are out-of-date packages.
 # The script should return *ONLY* a number. If it doesn't output a number, updates are no longer checked.
